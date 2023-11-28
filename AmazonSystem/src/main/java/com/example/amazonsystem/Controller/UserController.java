@@ -136,7 +136,7 @@ public class UserController {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body("Insufficient balance");
         }
         if (check == 'V') {
-            return ResponseEntity.status(HttpStatus.OK).body("Cart is empty, you may want to add products to your cart");
+            return ResponseEntity.status(HttpStatus.OK).body("Product purchased, Cart is empty you may want to add products to your cart");
         }
         return ResponseEntity.status(HttpStatus.OK).body("Product Purchased");
     }
